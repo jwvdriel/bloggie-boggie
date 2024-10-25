@@ -49,3 +49,9 @@ body {
   padding: 0;
   min-height: 100vh;
 }
+
+header {
+  background-color: var(--Light-red);
+  min-height: 60vh;
+  border-bottom-left-radius: 6rem;
+}
