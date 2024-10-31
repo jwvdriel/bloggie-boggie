@@ -3,8 +3,8 @@
 
   /* ### Primary */
 
-  --Light-red: hsl(356, 100%, 66%); /*(CTA text)*/
-  --Very-light-red: hsl(355, 100%, 74%); /* (CTA hover background) */
+  --red: hsl(356, 100%, 66%); /*(CTA text)*/
+  --Very-light-cta: hsl(355, 100%, 74%); /* (CTA hover background) */
   --Very-dark-blue: hsl(208, 49%, 24%); /*(headings)*/
 
   /* ### Neutral */
@@ -43,120 +43,16 @@
   --Font-Ubuntu: "Ubuntu", sans-serif;
 }
 
-body {
+.body {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
-  min-height: 100vh;
+  margin: 0;
 }
 
 header {
-  background-color: var(--Very-light-red);
-  min-height: 60vh;
-  border-bottom-left-radius: 6rem;
-}
-
-.navbar-brand {
-  color: var(--White);
-  font-family: var(--Font-Overpass);
-  font-size: 2rem;
-  font-weight: 600;
-  text-transform: capitalize;
-  letter-spacing: -1px;
-  margin: 0 0 0 1rem;
-}
-
-.navbar-brand:hover {
-  color: var(--White);
-}
-
-ul .navbar {
-  width: 90%;
-}
-
-.navbar {
-  background-color: var(--Very-light-red) !important;
-  margin-bottom: 1rem;
   background-image: url(assets/bg-pattern-intro-mobile.svg);
-}
-
-.navbar-collapse {
-  background-color: var(--White);
-  flex-grow: 0;
-  flex-basis: auto;
-  width: 90%;
-  margin: 1.5rem auto;
-  border-radius: 0.5rem;
-  text-align: center;
-}
-
-.navbar-toggler {
-  background-image: url(assets/icon-close.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  color: transparent;
-  border: none;
-}
-
-.navbar-toggler-icon {
-  background-image: none;
-  border: none;
-  margin: 0 0.9rem 0 0;
-}
-
-.dropdown-menu {
-  border: none;
-  background-color: var(--Grayish-blue);
-  opacity: 0.5;
-  width: 85%;
-  margin: 0 auto;
-}
-
-.dropdown-toggle::after {
-  color: var(--Light-red);
-}
-
-.dropdown-item,
-.nav-link {
-  text-align: center;
-  font-family: var(--Font-Overpass);
-  font-weight: 600;
-}
-
-.nav-link {
-  font-weight: 600;
-  font-size: var(--Font-size);
-}
-
-hr {
-  width: 85%;
-  margin: 0 auto;
-  color: var(--Grayish-blue);
-  margin: 1.5rem auto 0;
-}
-
-#login-button {
-  background: transparent;
-  border: none;
-  font-family: var(--Font-Overpass);
-  font-weight: 600;
-  font-size: var(--Font-size);
-  margin: 2rem 0 0.5rem 0;
-}
-
-#sign-up-button {
-  background: linear-gradient(
-    to right,
-    var(--Very-light-red),
-    var(--Light-red)
-  );
-  border-radius: 3rem;
-  width: 9rem;
-  height: 3rem;
-  border: none;
-  color: var(--White);
-  margin-bottom: 1rem;
-  font-family: var(--Font-Overpass);
-  font-size: var(--Font-size);
-  font-weight: 600;
+  background-position: right center;
+  display: flex;
+  height: 50vh;
+  width: 100%;
 }
