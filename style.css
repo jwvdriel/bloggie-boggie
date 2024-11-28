@@ -43,16 +43,15 @@
   --Font-Ubuntu: "Ubuntu", sans-serif;
 }
 
-.body {
+body {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-header {
-  background-image: url(assets/bg-pattern-intro-mobile.svg);
-  background-position: right center;
-  display: flex;
-  height: 50vh;
-  width: 100%;
+.background-gradient {
+  background: url(assets/bg-pattern-intro-mobile.svg),
+    linear-gradient(160deg, var(--Very-light-red) 2%, var(--Light-red) 80%);
+  background-position: 35% 34%;
+  height: 75vh;
 }
